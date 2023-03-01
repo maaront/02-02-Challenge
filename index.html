@@ -6,30 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Matt Turner | Web Developer</title>
    
 </head>
 <body>
     <header>
         <nav>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#work">Work</a></li>
             </ul>
           </nav>
         <section id="hero">
-            <p>My name is</p>
-            <h1>Matt Turner</h1>
-            <p>and I make websites</p>
-        </section>
+            <section id="hero-text">
+                <p>My name is</p>
+                <h1>Matt Turner</h1>
+                <p>and I make websites</p>
+            </section>
+            <img id="hero-img-a" alt="photo" src="./assets/Images/Avatar-PNG-Pic.png">
     </header>
-
-    <main>
+    
+    <main id="work">
+        <h2>Recent Work</h2>
+        <section id="work-wrapper">
         
-    </main>
+            <card id="work-1">
+                <h2>Example 1</h2>
+            </card>
+            
+            <card id="work-2">
+                <h2>Example 2</h2>
+            </card>
+
+            <card id="work-3">
+                <h2>Example 3</h2>
+            </card>
+
+            <card id="work-4">
+                <h2>Example 4</h2>
+            </card>
+
+            <card id="work-5">
+                <h2>Example 5</h2>
+            </card>
+            </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                    <input type="text" class="input-field" placeholder="Name" required/>
+                    <input type="text" class="input-field" placeholder="Email" required/>
+                    <input type="text" class="input-field" placeholder="Message" required/>
+                    <button>Say hello</button>
+            </form>
+        </section> 
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at neque commodo, ultrices ex id, sollicitudin augue. Proin in ipsum aliquam, tincidunt ex eu, rutrum nibh. Suspendisse consequat erat vitae neque mattis, cursus tempus diam tristique. Morbi lacinia vel odio non fermentum. Nullam nec vulputate urna. Sed laoreet sem nec nisi efficitur elementum. Nullam scelerisque, enim pulvinar posuere bibendum, est mauris interdum diam, vel accumsan mauris nibh a velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla congue ex purus, in iaculis eros venenatis quis. Nam euismod feugiat feugiat. Nunc at nulla dolor. Aenean finibus metus vitae metus rhoncus, sit amet egestas felis dignissim. Nunc ut massa in massa scelerisque tincidunt. Maecenas tempus interdum elit. Maecenas metus orci, cursus lobortis vestibulum nec, bibendum at augue. Duis velit est, pellentesque a nunc vitae, convallis efficitur erat.</p>
+        </section>
+    </main> 
 </body>
+
+
 <footer>
+ <img src="https://img.icons8.com/material-sharp/24/null/github.png" alt="github icon"/>
+ <img src="https://img.icons8.com/ios-glyphs/30/null/linkedin-circled--v1.png" alt="linkedin icon"/>
+ <img src="https://img.icons8.com/material-rounded/24/null/mail.png" alt="mail icon"/>
+</footer>
+
 
 </footer>
 </html>
