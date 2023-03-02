@@ -137,6 +137,10 @@ card:hover {
     transform: translateY(5px);
 }
 
+card > a {
+    background-color: transparent;
+}
+
 card h2 {
  padding: 10px 10px;
  text-align: left;
@@ -149,24 +153,14 @@ card h2 {
  position: absolute;
 }
 
-card:hover > img {
+card:hover img {
     filter: grayscale(25%) brightness(50%);
-}
-
-card img:hover {
-    filter: grayscale(25%) brightness(50%);
-    z-index: 0;
 }
 
 card img {
     width: 300px;
     min-height: 250px;
     transition: all 0.25s ease-in-out;
-}
-
-card img:hover {
-    filter: grayscale(25%) brightness(50%);
-    z-index: 0;
 }
 
 card p {
@@ -180,7 +174,7 @@ card p {
     display: none;
   }
 
-  card:hover > p {
+  card:hover  p {
     display: inline;
   }
 
@@ -291,8 +285,7 @@ button:hover {
 }
 #social-icons {
     font-size: 24px;
-    margin: 25px auto;
-    position: relative;
+
  }
 
 /* Footer */
