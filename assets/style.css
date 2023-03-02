@@ -278,19 +278,22 @@ button:hover {
 
 /* About Me */
 
-#about article{
-    
+#about article {
     display: flex;
     flex-direction: column;
     align-items: end;
-
+    position: relative;
+    
 }
-
 #about p {
     max-width: 500px;
     padding: 30px 10% 0 0;
 }
-
+#social-icons {
+    font-size: 24px;
+    margin: 25px auto;
+    position: relative;
+ }
 
 /* Footer */
 footer {
@@ -298,8 +301,7 @@ footer {
     padding: 25px 0;
     display: flex;
     justify-content: center;
+    display: flex;
+    font-family: "Space Mono", monospace;
 }
 
-footer img {
-    flex: 0 0 wrap; 
-}
