@@ -23,6 +23,7 @@ h2 {
 
 p {
     background-color: inherit;
+    color: var(--dark);
 }
 
 /* Navigation menu */
@@ -122,31 +123,18 @@ main h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
-
-card:first-child {
-    min-width: 60%;
-}
-
 card {
     margin: 25px;
     width: 300px;
-    min-height: 250px;
+    height: 250px;
     box-shadow: 8px 8px 0px 0px var(--dark);
     transition: all 0.25s ease-in-out;
-    filter: grayscale(25%) brightness(50%);
 }
 
 card:hover {
     box-shadow: -8px -8px 0px 0px var(--accent-color);
     transform: translateY(5px);
-    filter: none;
-}
-
-card img {
- 
-    
 }
 
 card h2 {
@@ -155,40 +143,59 @@ card h2 {
  margin: auto;
  background-color: transparent;
  color: var(--light);
- transition: all .25s ease-in-out;
  font-weight: 800;
+ z-index: 2;
+ transition: all 0.25s ease-in-out;
+ position: absolute;
 }
 
-#work-1 {
-    background-image: url(https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: no-repeat;
-    background-size: 100%;
+card:hover > img {
+    filter: grayscale(25%) brightness(50%);
 }
 
-#work-2 {
-    background-image: url(https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: no-repeat;
-    background-size: 100%;
+card img:hover {
+    filter: grayscale(25%) brightness(50%);
+    z-index: 0;
 }
 
-#work-3 {
-    background-image: url(https://images.pexels.com/photos/4319752/pexels-photo-4319752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: no-repeat;
-    background-size: 100%;
+card img {
+    width: 300px;
+    min-height: 250px;
+    transition: all 0.25s ease-in-out;
 }
 
-#work-4 {
-    background-image: url(https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&w=800);
-    background-repeat: no-repeat;
-    background-size: 100%;
+card img:hover {
+    filter: grayscale(25%) brightness(50%);
+    z-index: 0;
 }
 
-#work-5 {
-    background-image: url(https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: no-repeat;
-    background-size: 100%;
+card p {
+    position: absolute;
+    background-color: transparent;
+    padding: 50px 10px;
+    max-width: 250px;
+    transition: all 0.25s ease-in-out;
+    z-index: 1;
+    color: var(--light);
+    display: none;
+  }
+
+  card:hover > p {
+    display: inline;
+  }
+
+  card:first-child {
+    min-width: 60%;
 }
 
+card:first-child img{
+    width: 100%;
+    height: 250px;
+}
+
+card:first-child p {
+    max-width: 450px;
+}
 
 /* Contact Form */
 
@@ -199,8 +206,10 @@ card h2 {
     height: 400px;
     flex-direction: column;
     margin: 200px auto;
-    box-shadow: 8px 8px 0px 0px var(--light);
+    box-shadow: 8px 8px 0px 0px var(--dark);
     transition: all 0.25s ease-in-out;
+    border-bottom: solid 1px var(--light);
+    border-right: solid 1px var(--light);
 }
 
 #contact:hover {
@@ -268,6 +277,20 @@ button:hover {
 
 
 /* About Me */
+
+#about article{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+#about p {
+    max-width: 500px;
+    padding: 30px 10% 0 0;
+}
+
 
 /* Footer */
 footer {
