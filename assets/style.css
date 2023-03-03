@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+    cursor: default;
 }
 
 :root {
@@ -28,16 +29,20 @@ p {
 
 /* Navigation menu */
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     color: var(--dark);
     padding: 25px 50px 0px 0px;
+    background-color: var(--light);
+    z-index: 10;
+    width: 100%;
   }
   
 nav ul {
     display: flex;
     flex-flow: row-reverse;
     font-family: 'Space Mono', monospace;
+    padding-bottom: 15px;
 }
 
 nav ul a {
@@ -168,7 +173,7 @@ card p {
     background-color: transparent;
     padding: 50px 10px;
     max-width: 250px;
-    transition: all 0.25s ease-in-out;
+    transition: all .25s ease-in-out;
     z-index: 1;
     color: var(--light);
     display: none;
@@ -223,8 +228,8 @@ form {
     transition: all 0.25s ease-in-out;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
-    align-items: center
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -238,6 +243,7 @@ input {
     position: relative;
     width: 80%;
     color: var(--light);
+    transition: all 0.25s ease-in-out;
 	}
 
 input:focus-visible {
@@ -262,6 +268,7 @@ button {
     width: 50%;
     border: 0;
     padding: 15px;
+    transition: all 0.25s ease-in-out;
 }
 
 button:hover {
@@ -275,17 +282,21 @@ button:hover {
 #about article {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     position: relative;
     
 }
 #about p {
     max-width: 500px;
-    padding: 30px 10% 0 0;
+    padding: 30px 30px 0 50%;
 }
 #social-icons {
     font-size: 24px;
+ }
 
+ .fa-brands:hover{
+    color: var(--accent-color);
+    transition: all 0.25s ease-in-out;
  }
 
 /* Footer */
@@ -296,5 +307,87 @@ footer {
     justify-content: center;
     display: flex;
     font-family: "Space Mono", monospace;
+    cursor: default;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 1049px) {
+    card:first-child {
+        min-width: 95%;
+    }
+
+    #work-wrapper {
+        justify-content: space-around;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #hero h1 {
+        font-size: 75px;
+    }
+
+    #hero img {
+        width: 200px;
+    }
+
+    #hero p {
+        font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 775px) {
+    #hero {
+        padding: 100px 25px 0;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+    
+    #hero h1 {
+        font-size: 50px;
+    }
+
+    #hero img {
+        width: 150px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+   
+  }
+
+
+  @media screen and (max-width: 699px) {
+    card {
+        min-width: 90%;
+    }
+
+    card img{
+        width: 100%;
+        height: 250px;
+    }
+
+    #about p {
+            max-width: 500px;
+            padding: 30px 30px;
+        }
+    }
+  
+
+  @media screen and (max-width: 420px) {
+    #contact {
+    width: 90%;
+    height: 400px;
+    margin: 100px auto;
+  }
+  }
+
+/*
+  @media screen and (max-width: 614px) {
+    #work-wrapper {
+        justify-content: center;
+    }
+  }
+  /*
