@@ -159,7 +159,7 @@ card:hover img {
     filter: grayscale(25%) brightness(50%);
 }
 
-  card:first-child {
+card:first-child {
     min-width: 60%;
 }
 
@@ -211,8 +211,9 @@ card p {
     min-height: 250px;
     background-size: contain;
     background-position: center center;
+    background-repeat: no-repeat;
     transition: all 0.25s ease-in-out;
-    border: solid 1px #01aa02;
+    /* border-bottom: solid 1px var(--light); */
 }
 
 #showcase-1:hover {
@@ -227,13 +228,28 @@ card p {
     display: none;
 }
 
-#other-work-1 {
+#other-work {
     background-image: url("./Images/SVG/Baseweather-logo-wide.svg");
     min-height: 250px;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     transition: all 0.25s ease-in-out;
+    /* border-bottom: solid 1px var(--light); */
 }
+
+#other-work:hover {
+    background-color: #272727;
+}
+
+#other-work:hover h2 {
+    display: inline-block;
+}
+
+#other-work h2 {
+    display: none;
+}
+
 
 
 /* Contact Form */
