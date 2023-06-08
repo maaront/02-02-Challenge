@@ -140,6 +140,10 @@ card {
     height: 250px;
     box-shadow: 8px 8px 0px 0px var(--dark);
     transition: all 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 card:hover {
@@ -182,6 +186,7 @@ card h2 {
     z-index: 2;
     transition: all 0.25s ease-in-out;
     position: absolute;
+    /* display: none; */
     }
 
 card img {
@@ -200,6 +205,36 @@ card p {
     color: var(--light);
     display: none;
   }
+
+#showcase-1 {
+    background-image: url("./Images/SVG/LL-LOGO.svg");
+    min-height: 250px;
+    background-size: contain;
+    background-position: center center;
+    transition: all 0.25s ease-in-out;
+    border: solid 1px #01aa02;
+}
+
+#showcase-1:hover {
+    background-color: #272727;
+}
+
+#showcase-1:hover h2 {
+    display: inline-block;
+}
+
+#showcase-1 h2 {
+    display: none;
+}
+
+#other-work-1 {
+    background-image: url("./Images/SVG/Baseweather-logo-wide.svg");
+    min-height: 250px;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.25s ease-in-out;
+}
+
 
 /* Contact Form */
 
